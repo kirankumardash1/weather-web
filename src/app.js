@@ -69,19 +69,20 @@ app.get('/weather', (req, res) => {
                         error:err
                     })
                 }else{
-                    res.send({
-                        summary:data.summary,
-                        temperature : data.temperature,
-                        precipProbabilit:data.precipProbability,
-                        windspeed:data.windspeed,
-                        windgust:data.windgust,
-                        windbearing:data.windbearing,
-                        location
+                    data.location=location;
+                    res.send(data
+                        // summary:data.summary,
+                        // temperature : data.temperature,
+                        // precipProbabilit:data.precipProbability,
+                        // windspeed:data.windspeed,
+                        // windgust:data.windgust,
+                        // windbearing:data.windbearing,
+                        // location
 
                     //forecast: data,
                     //wind:
                     //location
-                    });
+                    );
                 }
                 
             });
