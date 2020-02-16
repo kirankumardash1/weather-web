@@ -6,6 +6,7 @@ const geocode = require('../utils/geocode');
 
 
 const app = express()
+const port = process.env.PORT || 8080
 
 //define paths for express config
 const publicDirectoryPath = path.join(__dirname, '../public');
@@ -96,6 +97,6 @@ app.get('*',(req,res)=>{
         name:'Kirann'});
 })
 
-app.listen(8080, () => {
-    console.log('Server is up on port 8080.')
+app.listen(port, () => {
+    console.log('Server is up on port '+port)
 })
