@@ -30,7 +30,7 @@ weatherform.addEventListener('submit',(e)=>{
                 messageOne.textContent ='location => '+ data.location;
                 messageTwo.textContent = data.summary;
                 messageThree.textContent = 'temprature => '+data.temperature;
-                messageFour.textContent ='precipProbability => '+ data.precipProbabilit;
+                messageFour.textContent ='precipProbability => '+ data.precipProbability;
                 messageFive.textContent = 'windspeed => '+data.windspeed;
                 messageSix.textContent = 'windgust=> '+data.windgust
                 messageSeven.textContent ='windbearing=> '+ data.windbearing

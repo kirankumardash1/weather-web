@@ -70,6 +70,7 @@ app.get('/weather', (req, res) => {
                     })
                 }else{
                     data.location=location;
+                    console.log(data);
                     res.send(data
                         // summary:data.summary,
                         // temperature : data.temperature,
