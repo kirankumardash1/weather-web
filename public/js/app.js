@@ -1,11 +1,10 @@
 
 
-console.log("client side java script file loaded");
-
 const weatherform = document.querySelector('form');
 const search = document.querySelector('input');
 var messageOne = document.querySelector('#message-1');
 var messageTwo = document.querySelector('#message-2');
+
 
 weatherform.addEventListener('submit',(e)=>{
     e.preventDefault();
