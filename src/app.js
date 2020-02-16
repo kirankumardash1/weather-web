@@ -70,8 +70,17 @@ app.get('/weather', (req, res) => {
                     })
                 }else{
                     res.send({
-                    forecast: data,
-                    location
+                        summary:data.summary,
+                        temperature : data.temperature,
+                        precipProbabilit:data.precipProbability,
+                        windspeed:data.windspeed,
+                        windgust:data.windgust,
+                        windbearing:data.windbearing,
+                        location
+
+                    //forecast: data,
+                    //wind:
+                    //location
                     });
                 }
                 
